@@ -1,0 +1,22 @@
+{
+  "name": "whenjs",
+  "version": "0.0.1",
+  "description": "A Simple 'when' function for both node and the browser",
+  "main": "when.js",
+  "scripts": {
+    "test": "echo \"Hey, Want Tests? Why not write some and contribute to the community?\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ariporad/whenjs.gits"
+  },
+  "keywords": [
+    "when",
+    "loop"
+  ],
+  "author": "Ari Porad <ariporad+npm@gmail.com>",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/ariporad/whenjs/issues"
+  }
+}

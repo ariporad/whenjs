@@ -1,5 +1,5 @@
-When JS
-_______
+# When.js
+### As in 'When you need a when function for javascript, use when.js'
 
 ### A simple library for 'when' loops
 

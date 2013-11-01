@@ -11,7 +11,7 @@ function when(condition, callback){
 if(typeof exports != 'object'){
     window.when = when;
 } else {
-    exports = when;
+    module.exports = when;
 }
 
 var nextTick;

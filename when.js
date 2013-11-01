@@ -5,10 +5,10 @@ function when(condition, callback){
     if(typeof callback != "function"){
         throw new Error("Callback Must Be A Function");
     }
-    handler(c, cb);
+    handler(condition, callback);
 }
 
-if(typeof exports != 'object'){
+if(typeof module != 'object'){
     window.when = when;
 } else {
     module.exports = when;
@@ -17,7 +17,7 @@ if(typeof exports != 'object'){
 var nextTick;
 
 if(process.nextTick){
-    nextTick = process.nextTick;
+    nextTick = setImmediate;
 } else {
     nextTick = function(fn){
         setTimeout(fn, 0);
@@ -25,8 +25,8 @@ if(process.nextTick){
 }
 
 function handler(c, cb){
-    if(condition()){
-        callback();
+    if(c()){
+        cb();
     } else {
         nextTick(function(){ handler(c, cb); });
     }

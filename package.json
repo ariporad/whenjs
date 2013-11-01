@@ -1,6 +1,6 @@
 {
   "name": "whenjs",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A Simple 'when' function for both node and the browser",
   "main": "when.js",
   "scripts": {
